@@ -1,0 +1,116 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+  color: #222;
+}
+header {
+  background: #4e54c8;
+  color: #fff;
+  text-align: center;
+  padding: 2rem 0 1rem 0;
+}
+nav {
+  background: #232526;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+nav li {
+  margin: 0 1.5rem;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+  padding: 0.5rem 0;
+}
+nav a:hover,
+nav a:focus {
+  color: #ffde59;
+}
+section {
+  max-width: 800px;
+  margin: 2rem auto;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.09);
+}
+#about img {
+  width: 120px;
+  border-radius: 50%;
+  display: block;
+  margin-bottom: 1rem;
+}
+ul {
+  padding-left: 2rem;
+}
+footer {
+  background: #232526;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+  letter-spacing: 1px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+form input,
+form textarea {
+  margin-bottom: 1rem;
+  padding: 0.6rem;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: inherit;
+}
+form button {
+  width: 120px;
+  padding: 0.7rem;
+  background-color: #4e54c8;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  align-self: flex-start;
+  transition: background 0.3s;
+}
+form button:hover,
+form button:focus {
+  background: #232526;
+}
+
+/* Bonus: Pseudo-elements for icons */
+nav a[href*="home"]:before {
+  content: "🏠 ";
+}
+nav a[href*="about"]:before {
+  content: "👤 ";
+}
+nav a[href*="projects"]:before {
+  content: "💼 ";
+}
+nav a[href*="contact"]:before {
+  content: "✉️ ";
+}
+
+/* Attribute selector: style external links */
+a[href^="https://"] {
+  color: #4e54c8;
+  text-decoration: underline;
+}
+a[href^="https://"]:hover,
+a[href^="https://"]:focus {
+  color: #ffde59;
+}
